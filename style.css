@@ -1,0 +1,143 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-family:system-ui,sans-serif;line-height:1.5}
+
+/* highlight menu target */
+section:target::before{content:"";display:block;height:70px;margin-top:-70px}
+
+/* section general */
+section{padding:4rem 2rem 3rem}
+section h2{font-size:2rem;margin-bottom:1.5rem;}
+
+/* isi navbar */
+nav{
+    position: sticky; top: 0; z-index: 1000;
+    background-color: #111; color: #fff; display: flex; align-items: center;
+    justify-content: space-between; padding: .8rem 2rem; border-bottom: 1px solid #333;  
+}
+
+.brand{
+    font-size: 1.35rem; font-weight: 700; letter-spacing: .5px;
+}
+.menu{
+    display:flex;gap:2rem;list-style:none
+}
+.menu a{
+    color:#ddd;text-decoration:none;font-weight:600;transition:.2s
+}
+.menu a:hover{
+    color:#fff
+}
+.login-btn{
+    padding:.4rem 1rem;border:1px solid #e91e63;border-radius:4px;
+    color:#e91e63;text-decoration:none;font-weight:600;transition:.2s
+  }
+.login-btn:hover{
+    background:#e91e63;color:#fff
+}
+
+/* isi film */
+.film-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.film-item {
+    width: calc(25% - 20px); /* Menampilkan 4 film dalam satu baris */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.film-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.film-item img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.film-item .bioskop {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* isi akan tayang */
+.akan-tayang-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.akan-tayang-item{
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.akan-tayang-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.akan-tayang-item img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.akan-tayang-item .bioskop{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* isi makanan */
+.makanan-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.makanan-item{
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.makanan-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.makanan-item img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.makanan-item .judul{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+    position: relative;
+}
